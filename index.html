@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+        <!-- In this Step we setup form which required personal info like name , email, phone etc. -->
+
+        <form id="resumeForm">
+
+            <div class="name">
+                Dynamic editable Resume Builder by 
+                (Muhammad Shezan)
+            </div>
+        <fieldset>
+        
+            <legend>Your Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter Your Name" name="name" required><br> 
+        
+        
+            <label for="email">Email Address:</label>
+            <input type="text" id="email" placeholder="Enter Your Email" name="email" required> <br>
+        
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="contact" placeholder="Enter your Phone Number" name="phone" required> <br>
+        </fieldset>
+        
+        <!-- In Step 2 we manage Educational Background and work experience -->
+        
+        <fieldset>
+            <legend> Educational Background</legend>
+            <label for="edu">Education</label>
+            <textarea name="edu" id="edu" rows="4" required></textarea> <br>
+        
+        </fieldset>
+        
+        <fieldset>
+            <legend> Work Experience</legend>
+            <label for="exp">Experience</label>
+            <textarea name="exp" id="exp" rows="4" required></textarea> <br>
+        
+        </fieldset>
+        
+        <fieldset>
+            <legend> Skills</legend>
+            <label for="skill">Skills</label>
+            <textarea name="skill" id="skill" rows="4" required></textarea> <br>
+        
+        </fieldset>
+        
+        <button type="submit">Generate Your Resume</button>
+        </form>
+
+        
+    
+        <!-- for generate our CV/resume -->
+
+        <div id="resumeOutput">
+            
+
+        </div>
+
+        <script src="script.js"></script>
+
+        
+</body>
+</html>
+
