@@ -9,21 +9,26 @@ document.getElementById("resumeForm")?.addEventListener('submit', function(event
 const nameElement = document.getElementById("name") as HTMLInputElement;
 const emailElement = document.getElementById("email") as HTMLInputElement;
 const phoneElement = document.getElementById("contact") as HTMLInputElement;
+const adrElement = document.getElementById("adr") as HTMLInputElement;
 const eduElement = document.getElementById("edu") as HTMLInputElement;
 const expElement = document.getElementById("exp") as HTMLInputElement;
 const skillElement = document.getElementById("skill") as HTMLInputElement;
+const aboutElement = document.getElementById("about") as HTMLInputElement;
 
 
 
-if(nameElement && emailElement && phoneElement && eduElement && expElement && skillElement){
+
+
+if(nameElement && emailElement && phoneElement && adrElement && eduElement && expElement && skillElement && aboutElement){
 
     const name = nameElement.value;
     const email = emailElement.value;
     const phone = phoneElement.value;
+    const adrress = adrElement.value;
     const education = eduElement.value;
     const exp = expElement.value;
     const skill = skillElement.value;
-
+    const about = aboutElement.value;
 
     
 //Get Output
@@ -32,6 +37,10 @@ const resumeOutput = `
 <p><strong>Name:</strong> <span id= "editName" class = "editable">${name} </span> </p>
 <p><strong>Email:</strong> <span id= "editEmail" class = "editable">${email}</span> </p>
 <p><strong>Phone Number:</strong> <span id= "editNumber" class = "editable">${phone}</span> </p>
+<p><strong>Country/City:</strong> <span id= "editNumber" class = "editable">${adrress}</span> </p>
+
+<h3>Objective:</h3>
+<p id= "editEducation" class = "editable">${about}</p>
 
 
 <h3>Education:</h3>

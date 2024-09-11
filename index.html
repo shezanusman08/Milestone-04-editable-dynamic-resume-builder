@@ -14,12 +14,12 @@
         <form id="resumeForm">
 
             <div class="name">
-                Dynamic editable Resume Builder by 
+                Dynamic Resume Builder by 
                 (Muhammad Shezan)
             </div>
         <fieldset>
         
-            <legend>Your Information</legend>
+            <legend id="yi">Your Information</legend>
             <label for="name">Name:</label>
             <input type="text" id="name" placeholder="Enter Your Name" name="name" required><br> 
         
@@ -29,29 +29,45 @@
         
             <label for="phone">Phone Number:</label>
             <input type="text" id="contact" placeholder="Enter your Phone Number" name="phone" required> <br>
+
+        
+            <label for="phone">Country/City:</label>
+            <input type="text" id="adr" placeholder="Your country/city" name="adr" required> <br>
+
+
+
+
+
         </fieldset>
         
         <!-- In Step 2 we manage Educational Background and work experience -->
         
         <fieldset>
+            <legend> Objective</legend>
+            <label for="about">Objective:</label>
+            <textarea name="about" id="about" placeholder="Tell us about you/Short introduction" rows="6" required></textarea> <br>
+        
+        </fieldset>
+
+        <fieldset>
             <legend> Educational Background</legend>
-            <label for="edu">Education</label>
-            <textarea name="edu" id="edu" rows="4" required></textarea> <br>
+            <label for="edu">Education:</label>
+            <textarea name="edu" id="edu" placeholder="Your education here" rows="4" required></textarea> <br>
         
         </fieldset>
         
         <fieldset>
             <legend> Work Experience</legend>
-            <label for="exp">Experience</label>
-            <textarea name="exp" id="exp" rows="4" required></textarea> <br>
+            <label for="exp">Experience:</label>
+            <textarea name="exp" id="exp" placeholder="Your experience here" rows="4" required></textarea> <br>
         
         </fieldset>
         
         <fieldset>
             <legend> Skills</legend>
-            <label for="skill">Skills</label>
-            <textarea name="skill" id="skill" rows="4" required></textarea> <br>
-        
+            <label for="skill">Skills:</label>
+            <textarea name="skill" id="skill" placeholder="Your skills" rows="4" required></textarea> <br>
+
         </fieldset>
         
         <button type="submit">Generate Your Resume</button>

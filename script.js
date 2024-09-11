@@ -6,18 +6,22 @@ var _a;
     var nameElement = document.getElementById("name");
     var emailElement = document.getElementById("email");
     var phoneElement = document.getElementById("contact");
+    var adrElement = document.getElementById("adr");
     var eduElement = document.getElementById("edu");
     var expElement = document.getElementById("exp");
     var skillElement = document.getElementById("skill");
-    if (nameElement && emailElement && phoneElement && eduElement && expElement && skillElement) {
+    var aboutElement = document.getElementById("about");
+    if (nameElement && emailElement && phoneElement && adrElement && eduElement && expElement && skillElement && aboutElement) {
         var name_1 = nameElement.value;
         var email = emailElement.value;
         var phone = phoneElement.value;
+        var adrress = adrElement.value;
         var education = eduElement.value;
         var exp = expElement.value;
         var skill = skillElement.value;
+        var about = aboutElement.value;
         //Get Output
-        var resumeOutput = "\n<h2>Resume</h2>\n<p><strong>Name:</strong> <span id= \"editName\" class = \"editable\">".concat(name_1, " </span> </p>\n<p><strong>Email:</strong> <span id= \"editEmail\" class = \"editable\">").concat(email, "</span> </p>\n<p><strong>Phone Number:</strong> <span id= \"editNumber\" class = \"editable\">").concat(phone, "</span> </p>\n\n\n<h3>Education:</h3>\n<p id= \"editEducation\" class = \"editable\">").concat(education, "</p>\n\n<h3>Experience:</h3>\n<p id= \"editExperience\" class = \"editable\">").concat(exp, "</p>\n\n<h3>Skills:</h3>\n<p id= \"editSkill\" class = \"editable\">").concat(skill, "</p>\n");
+        var resumeOutput = "\n<h2>Resume</h2>\n<p><strong>Name:</strong> <span id= \"editName\" class = \"editable\">".concat(name_1, " </span> </p>\n<p><strong>Email:</strong> <span id= \"editEmail\" class = \"editable\">").concat(email, "</span> </p>\n<p><strong>Phone Number:</strong> <span id= \"editNumber\" class = \"editable\">").concat(phone, "</span> </p>\n<p><strong>Country/City:</strong> <span id= \"editNumber\" class = \"editable\">").concat(adrress, "</span> </p>\n\n<h3>Objective:</h3>\n<p id= \"editEducation\" class = \"editable\">").concat(about, "</p>\n\n\n<h3>Education:</h3>\n<p id= \"editEducation\" class = \"editable\">").concat(education, "</p>\n\n<h3>Experience:</h3>\n<p id= \"editExperience\" class = \"editable\">").concat(exp, "</p>\n\n<h3>Skills:</h3>\n<p id= \"editSkill\" class = \"editable\">").concat(skill, "</p>\n");
         var resumeOutputElement = document.getElementById("resumeOutput");
         if (resumeOutputElement) {
             resumeOutputElement.innerHTML = resumeOutput;
